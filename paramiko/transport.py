@@ -123,10 +123,10 @@ class Transport (threading.Thread, ClosingContextManager):
         'ecdsa-sha2-nistp256',
     )
     _preferred_kex =  (
-        'diffie-hellman-group1-sha1',
-        'diffie-hellman-group14-sha1',
         'diffie-hellman-group-exchange-sha1',
         'diffie-hellman-group-exchange-sha256',
+        'diffie-hellman-group1-sha1',
+	'diffie-hellman-group14-sha1'
     )
     _preferred_compression = ('none',)
 
